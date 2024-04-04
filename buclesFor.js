@@ -16,7 +16,7 @@ function myRevert(myArr) {
 }
 console.log(myRevert([1, 2, 3, 4, 5]));
 function isRainbow(colors) {
-    var rainbowColors = ["rojo", "rosa", "amarillo", "negro", "cian", "celeste", "violeta"];
+    var rainbowColors = ["rojo", "naranja", "amarillo", "verde", "cian", "azul", "violeta"];
     for (var _i = 0, colors_1 = colors; _i < colors_1.length; _i++) {
         var color = colors_1[_i];
         var found = false;
@@ -35,8 +35,7 @@ function isRainbow(colors) {
         }
     }
 }
-isRainbow(["rojo", "naranja", "verde", "amarillo", "cian", "azul", "violeta"]);
-
+isRainbow(["rojo", "naranja", "amarillo", "negro", "cian", "azul", "violeta"]);
 function add(myWords) {
     var sum = 0;
     for (var _i = 0, myWords_1 = myWords; _i < myWords_1.length; _i++) {

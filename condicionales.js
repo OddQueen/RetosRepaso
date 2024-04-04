@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isEven = void 0;
-
 function zodiac(day, month) {
     var signo = "";
     if ((month === 3 && day >= 21) || (month === 4 && day <= 19)) {
@@ -42,7 +41,6 @@ function zodiac(day, month) {
     }
     return signo;
 }
-
 function continent(country) {
     var continente = "";
     switch (country) {
@@ -95,7 +93,6 @@ function isEven(number) {
     }
 }
 exports.isEven = isEven;
-
-console.log(zodiac(4, 10)); 
-continent("Fiyi"); 
-isEven(1392); 
+console.log(zodiac(4, 10));
+continent("Fiyi");
+isEven(1392);
