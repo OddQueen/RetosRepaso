@@ -51,4 +51,23 @@ export class Point {
             return 4;
         }
     }
+
+    public calculateNearest(pointsArray: Point[]): Point {
+        if (pointsArray.length === 0) {
+            throw new Error("Mamma mia! El array está vacío");
+        }
+
+        let minDistance = this.calculateDistance(pointsArray[0]);
+        let nearestPoint = pointsArray[0];
+
+        for (let i = 1; i < pointsArray.length; i++) {
+            const distance = this.calculateDistance(pointsArray[i]);
+            if (distance < minDistance) {
+                minDistance = distance;
+                nearestPoint = pointsArray[i];
+            }
+        }
+
+        return nearestPoint;
+    }
 }
